@@ -19,9 +19,19 @@ class Navbar extends Component{
 					<input type="checkbox" id="drop" />
 						<ul class="menu">
 							<li class="mr-lg-3 mr-2 active"><Link to='/'>Home</Link></li>
-							<li class="mr-lg-3 mr-2"><Link to='/about'>About</Link></li>
 							<li class="mr-lg-3 mr-2 p-0">
 							{/* <!-- First Tier Drop Down --> */}
+							<label for="drop-2" class="toggle">AboutUs <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+							<a href="#">About Us <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+							<input type="checkbox" id="drop-2"/>
+							<ul class="inner-dropdown">
+								<li><Link to='/About'>About Us</Link></li>
+								<li><Link to='/Gallery'>Gallery</Link></li>
+								<li><Link to='/single'>Locations</Link></li>
+							</ul>
+							</li>
+							<li class="mr-lg-3 mr-2 p-0">
+							{/* <!-- Second Tier Drop Down --> */}
 							<label for="drop-2" class="toggle">Booking <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
 							<a href="#">Booking <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 							<input type="checkbox" id="drop-2"/>
@@ -30,7 +40,17 @@ class Navbar extends Component{
 								<li><Link to='/single'>Rooms</Link></li>
 							</ul>
 							</li>
-							<li class="mr-lg-3 mr-2"><Link to='/gallery'>Gallery</Link></li>
+						
+							<li class="mr-lg-3 mr-2 p-0">
+							{/* <!-- Third Tier Drop Down --> */}
+							<label for="drop-2" class="toggle">News <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+							<a href="#">News <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+							<input type="checkbox" id="drop-2"/>
+							<ul class="inner-dropdown">
+								<li><Link to='/single'>News</Link></li>
+								<li><Link to='/single'>Reviews</Link></li>
+							</ul>
+							</li>
 							<li class="mr-lg-3 mr-2"><Link to='/contact'>Contact Us</Link></li>
 							
 
